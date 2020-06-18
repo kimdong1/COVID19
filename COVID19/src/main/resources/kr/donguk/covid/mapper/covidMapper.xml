@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.donguk.covid.mapper.COVID19Mapper">
+	<insert id="covid19Insert" parameterType="COVID19" >
+		insert into COVID19 (area, Infected, Additional_infected) values (#{area}, #{infected}, #{additionalInfected})
+	</insert>
+</mapper>
