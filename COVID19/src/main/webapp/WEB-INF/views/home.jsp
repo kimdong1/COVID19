@@ -16,7 +16,7 @@
 	    'packages':['geochart'],
 	    // Note: you will need to get a mapsApiKey for your project.
 	    // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
-	    'mapsApiKey': '구글 키'
+	    'mapsApiKey': '구글 api key'
     });
     google.charts.setOnLoadCallback(drawRegionsMap);
       
@@ -80,6 +80,7 @@
 	
 	<br />
 	<hr />
+	<span style="font-weight: bold;">번호</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-weight: bold;">내용</span>
 	<c:forEach var="vo" items="${list }" varStatus="vs">
 		<fmt:formatDate var="date" value="${vo.regDate }" pattern="yyyy.MM.dd(E) HH:mm"/>
 		<table>
