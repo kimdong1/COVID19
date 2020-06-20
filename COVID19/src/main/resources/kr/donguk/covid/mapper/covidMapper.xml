@@ -3,6 +3,20 @@
 	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="kr.donguk.covid.mapper.COVID19Mapper">
 	<insert id="covid19Insert" parameterType="COVID19" >
-		insert into COVID19 (area, Infected, Additional_infected) values (#{area}, #{infected}, #{additionalInfected})
+		insert into COVID19 
+			(area, Infected, AdditionalInfected, regDate) 
+		values 
+			(#{area}, #{infected}, #{additionalInfected}, #{regDate})
 	</insert>
+	
+	<update id="covid19Update" parameterType="COVID19">
+		update COVID19 set 
+			infected = #{infected}, AdditionalInfected = #{additionalInfected}, regDate = #{regDate} 
+		where 
+			area = #{area}
+	</update>
+	
+	<select id="covid19SelectList" resultType="COVID19">
+		select * from COVID19
+	</select>
 </mapper>
