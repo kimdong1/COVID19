@@ -16,7 +16,7 @@
 	    'packages':['geochart'],
 	    // Note: you will need to get a mapsApiKey for your project.
 	    // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
-	    'mapsApiKey': 'AIzaSyBHeimWpwRC7Bs6L5YQ5sTHX6E0fdPO51g'
+	    'mapsApiKey': '구글 키'
     });
     google.charts.setOnLoadCallback(drawRegionsMap);
       
